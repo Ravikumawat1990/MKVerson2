@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mtplview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainCAT"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/Internet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGray"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_5dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:id="@+id/cat1LinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <ProgressBar
+                                android:id="@+id/progrees"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/placeholder"
+                                android:layout_width="@dimen/margin_60dp"
+                                android:layout_height="@dimen/margin_60dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/circular" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/catOneImageView"
+                                android:layout_width="@dimen/margin_60dp"
+                                android:layout_height="@dimen/margin_60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="@dimen/margin_5dp"
+                                android:scaleType="centerCrop"
+                                app:civ_border_color="#FF000000"
+                                app:civ_fill_color="#FFFFFF" />
+
+                        </RelativeLayout>
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:id="@+id/catOneTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:padding="@dimen/margin_5dp"
+                            android:singleLine="true"
+                            mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightGray"></View>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/cat2LinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ProgressBar
+                                android:id="@+id/progrees1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/placeholder1"
+                                android:layout_width="@dimen/margin_60dp"
+                                android:layout_height="@dimen/margin_60dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/circular" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/catTwoImageView"
+                                android:layout_width="@dimen/margin_60dp"
+                                android:layout_height="@dimen/margin_60dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/margin_5dp"
+                                android:scaleType="centerCrop"
+                                app:civ_border_color="#FF000000"
+                                app:civ_fill_color="#BAD6E2" />
+
+                        </RelativeLayout>
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:id="@+id/catTwoTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:padding="@dimen/margin_5dp"
+                            android:singleLine="true"
+                            mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/cat3LinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/catThreeImagetView"
+                            android:layout_width="@dimen/font_55dp"
+                            android:layout_height="@dimen/font_55dp"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+
+                            app:civ_border_color="#FF000000"
+                            app:civ_fill_color="#BAD6E2" />
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:id="@+id/catThreeTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/margin_10dp"
+                            android:ellipsize="marquee"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/cat4LinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/catFourImagetView"
+                            android:layout_width="@dimen/font_55dp"
+                            android:layout_height="@dimen/font_55dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="centerCrop"
+
+                            app:civ_border_color="#FF000000"
+                            app:civ_fill_color="#BAD6E2" />
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:id="@+id/catFourTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/margin_10dp"
+                            android:ellipsize="marquee"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            mtplview:TypeFace="@string/fontface_robotolight_0" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_5dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+
+            >
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noInternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group" />
+
+
+        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+            android:id="@+id/textViewNoInterNet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/font_10dp"
+            android:gravity="center"
+            android:text="@string/internetMsg"
+
+            android:textSize="@dimen/font_24dp"
+            mtplview:TypeFace="@string/fontface_robotolight_0" />
+    </LinearLayout>
+</LinearLayout>

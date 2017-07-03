@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6">
+
+            <ImageView
+                android:layout_width="@dimen/margin_80dp"
+                android:layout_height="@dimen/margin_80dp"
+                android:src="@drawable/applogo" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/topTitles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/countryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Amazon Super Value Day Offer"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Get up to ₹1000 Amazon Gift Coupon at Amazon.in/value" />
+
+
+            </LinearLayout>
+
+            <com.app.elixir.makkhankitchen.mtplview.MtplButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_30dp"
+                android:layout_below="@+id/topTitles"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:text="SEE FULL DETAIL"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Addition Off Of Food "
+                        android:textStyle="bold" />
+
+
+                    <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="1000 Rs"
+                        android:textStyle="bold" />
+
+                    <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Expire On 02-03-2017"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

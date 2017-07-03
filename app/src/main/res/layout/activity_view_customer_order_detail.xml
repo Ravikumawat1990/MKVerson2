@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_customer_order_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:orientation="vertical"
+    tools:context="com.app.elixir.makkhankitchen.activity.ViewCustomerOrderDetail">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5dp"
+
+                app:cardBackgroundColor="@color/bgColor">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="1dp"
+
+                        android:weightSum="2">
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight=".8"
+                            android:padding="1dp"
+                            android:text="Name"
+                            android:textColor="@color/black" />
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:id="@+id/txtCustName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="1dp"
+                        android:weightSum="2">
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight=".8"
+                            android:padding="1dp"
+                            android:text="Number"
+                            android:textColor="@color/black" />
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:id="@+id/txtCustNumber"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="1dp"
+                        android:weightSum="2">
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight=".8"
+                            android:padding="1dp"
+                            android:text="Eamil"
+                            android:textColor="@color/black" />
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:id="@+id/txtCustEmail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="1dp"
+                        android:weightSum="2">
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight=".8"
+                            android:text="Order Id"
+                            android:textColor="@color/black" />
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:id="@+id/txtCustOrderId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="1dp"
+                        android:weightSum="2">
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="0.80"
+                            android:text="Order Status"
+                            android:textColor="@color/black" />
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:id="@+id/txtCustOrderStats"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:singleLine="true"
+
+                            android:textColor="@color/colorPrimary" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="1dp"
+                        android:weightSum="2">
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight=".8"
+                            android:text="Date Time"
+                            android:textColor="@color/black" />
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:id="@+id/txtCustOrderDandT"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+
+                            android:singleLine="true" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="1dp"
+                        android:weightSum="2">
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:id="@+id/mtplTextView3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight=".8"
+                            android:text="Address"
+                            android:textColor="@color/black" />
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:id="@+id/txtCustAdress"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+
+                            android:singleLine="true" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutDeliveryCharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="1dp"
+                        android:weightSum="2">
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight=".8"
+                            android:text="Delivery Chrage"
+                            android:textColor="@color/black" />
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:id="@+id/txtCustDeliveryChareg"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+
+                            android:singleLine="true"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="1dp"
+                        android:weightSum="2">
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight=".8"
+                            android:text="Amount"
+                            android:textColor="@color/black" />
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:id="@+id/txtCustAmount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+
+                            android:singleLine="true"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_5dp"
+                app:cardBackgroundColor="@color/bgColor">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.app.elixir.makkhankitchen.mtplview.MtplTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:padding="@dimen/margin_5dp"
+                            android:text="List Item's"
+                            android:textColor="@color/bgColor"
+                            android:textSize="@dimen/margin_20dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/my_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
